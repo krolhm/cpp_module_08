@@ -6,7 +6,7 @@
 /*   By: rbourgea <rbourgea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 16:13:42 by rbourgea          #+#    #+#             */
-/*   Updated: 2021/07/28 17:44:50 by rbourgea         ###   ########.fr       */
+/*   Updated: 2021/07/28 18:38:07 by rbourgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define EASYFIND_HPP
 
 #include <iostream>
+#include <cstring>
 #include <algorithm>
 #include <exception>
 
