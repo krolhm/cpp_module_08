@@ -6,7 +6,7 @@
 /*   By: rbourgea <rbourgea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 17:55:53 by rbourgea          #+#    #+#             */
-/*   Updated: 2021/07/30 11:42:03 by rbourgea         ###   ########.fr       */
+/*   Updated: 2021/07/30 19:10:03 by rbourgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,16 @@ void Span::addNumber(int number)
 		_vector.push_back(number);
 	else
 		throw VectorFullException();
+}
+
+void Span::addRandNumber(int max)
+{
+    srand(time(NULL));
+    if (_vector.size() < _vectorLength)
+        for (int i = 0; i < max; i++)
+            _vector.push_back(rand());
+    else
+        throw VectorFullException();
 }
 
 unsigned int Span::shortestSpan()

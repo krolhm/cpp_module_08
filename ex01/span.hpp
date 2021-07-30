@@ -6,7 +6,7 @@
 /*   By: rbourgea <rbourgea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 17:56:05 by rbourgea          #+#    #+#             */
-/*   Updated: 2021/07/30 11:42:00 by rbourgea         ###   ########.fr       */
+/*   Updated: 2021/07/30 19:08:43 by rbourgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class Span
 		Span(unsigned int N);
 		~Span();
 		void addNumber(int number);
+		void addRandNumber(int max);
 		unsigned int shortestSpan();
 		unsigned int longestSpan() const;
 		class NumbersException: public std::exception
